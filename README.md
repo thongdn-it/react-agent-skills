@@ -1,405 +1,324 @@
-# React Agent Skills
+<h1 align="center">⚛️ React Agent Skills</h1>
 
-[![GitHub](https://img.shields.io/badge/GitHub-thongdn--it%2Freact--agent--skills-blue)](https://github.com/thongdn-it/react-agent-skills)
+<p align="center">
+  <strong>The Ultimate AI Agent Skills Collection for the React Ecosystem</strong>
+</p>
 
-> A comprehensive collection of AI Agent skills optimized for React ecosystem and modern frameworks.
+<p align="center">
+  <a href="https://github.com/thongdn-it/react-agent-skills/stargazers"><img src="https://img.shields.io/github/stars/thongdn-it/react-agent-skills?style=for-the-badge&logo=github&color=yellow" alt="GitHub Stars" /></a>
+  <a href="https://github.com/thongdn-it/react-agent-skills/network/members"><img src="https://img.shields.io/github/forks/thongdn-it/react-agent-skills?style=for-the-badge&logo=github&color=blue" alt="GitHub Forks" /></a>
+  <a href="https://github.com/thongdn-it/react-agent-skills/blob/master/LICENSE"><img src="https://img.shields.io/github/license/thongdn-it/react-agent-skills?style=for-the-badge&color=green" alt="License" /></a>
+  <a href="https://skills.sh/thongdn-it/react-agent-skills"><img src="https://img.shields.io/badge/skills.sh-listed-purple?style=for-the-badge" alt="Skills.sh" /></a>
+</p>
 
-## 📋 Introduction
+<p align="center">
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-skills-included">Skills</a> •
+  <a href="#-why-react-agent-skills">Why?</a> •
+  <a href="#-supported-agents">Agents</a> •
+  <a href="#-contributing">Contributing</a>
+</p>
 
-**React Agent Skills** is a repository that aggregates best practices, guidelines, and patterns structured as "skills" that can be utilized by AI Agents (such as GitHub Copilot, Cursor AI, etc.) to improve code quality when working with React and related technologies.
+---
 
-This repository includes detailed skills for:
+## 🎯 What is React Agent Skills?
 
-- ⚡️ **Next.js 16 App Router** - Performance optimization, caching strategies, server components
-- 🎨 **ShadCN UI** - Component patterns, accessibility, theming
-- 🎯 **Tailwind CSS** - Utility-first CSS patterns, responsive design
-- 🔄 **TanStack Query** - Data fetching, caching, mutations
-- 📘 **TypeScript** - Type system optimization, compiler configuration
-- 🧪 **Vitest** - Testing patterns, mocking, async testing
-- 🏗️ **Vercel Patterns** - Composition patterns, React best practices
-- 🎭 **Web Design Guidelines** - UI/UX best practices
+**React Agent Skills** is a comprehensive collection of **19 curated AI agent skills** specifically designed for the React ecosystem. These skills transform your AI coding assistant into a React expert, providing best practices for:
 
-## 🚀 Installation
+- ⚡ **Performance Optimization** — React 19, Next.js 16, concurrent rendering
+- 🎨 **UI Development** — Tailwind CSS, shadcn/ui, responsive design
+- 🧪 **Testing Excellence** — Vitest, Playwright, TDD, MSW
+- 📦 **Data Management** — TanStack Query, Zod, React Hook Form
+- 🏗️ **Architecture** — Feature-based organization, composition patterns
 
-### Requirements
+> **One command. 19 skills. Instant expertise.**
 
-- Node.js 16+ or higher
-- npm, yarn, or pnpm
+---
 
-### Using with Agent Skills CLI
+## 🚀 Quick Start
 
-The simplest way to use these skills is through the Agent Skills CLI:
+Install all skills with a single command:
+
+```bash
+npx skills add https://github.com/thongdn-it/react-agent-skills --all
+```
+
+That's it! Your AI agent is now supercharged with React expertise.
+
+### Selective Installation
+
+Want to pick specific skills? Use interactive mode:
 
 ```bash
 npx skills add https://github.com/thongdn-it/react-agent-skills
 ```
 
-### Clone Repository
-
-If you want to customize or contribute:
+Or install specific skills directly:
 
 ```bash
-git clone https://github.com/thongdn-it/react-agent-skills.git
-cd react-agent-skills
+npx skills add https://github.com/thongdn-it/react-agent-skills --skill react nextjs tailwind
 ```
 
-## 📖 Project Structure
+---
 
-```
-react-agent-skills/
-├── README.md
-└── skills/
-    ├── nextjs/                      # Next.js 16 App Router
-    │   ├── SKILL.md                 # Skill description and rules
-    │   ├── AGENTS.md                # Guidelines for agents
-    │   ├── assets/                  # Templates and examples
-    │   └── references/              # 40+ detailed rules
-    │
-    ├── shadcn/                      # ShadCN UI
-    │   ├── SKILL.md
-    │   ├── AGENTS.md
-    │   └── references/              # Component patterns
-    │
-    ├── tailwind/                    # Tailwind CSS
-    │   ├── SKILL.md
-    │   ├── AGENTS.md
-    │   └── references/              # CSS patterns
-    │
-    ├── tanstack-query/              # TanStack Query
-    │   ├── SKILL.md
-    │   ├── AGENTS.md
-    │   └── references/              # Data fetching patterns
-    │
-    ├── typescript/                  # TypeScript
-    │   ├── SKILL.md
-    │   └── references/              # 42+ optimization rules
-    │
-    ├── vitest/                      # Vitest Testing
-    │   ├── SKILL.md
-    │   ├── AGENTS.md
-    │   ├── CHANGELOG.md
-    │   └── references/              # 44+ testing patterns
-    │
-    ├── vercel-composition-patterns/ # Vercel Composition Patterns
-    │   ├── SKILL.md
-    │   ├── AGENTS.md
-    │   └── rules/
-    │
-    ├── vercel-react-best-practices/ # React Best Practices
-    │   ├── SKILL.md
-    │   ├── AGENTS.md
-    │   └── rules/
-    │
-    └── web-design-guidelines/       # Web Design
-        └── SKILL.md
-```
+## 📚 Skills Included
 
-## 💡 Usage
+### Core Framework Skills
 
-### With AI Coding Assistants
+| Skill                                  | Rules | Description                                                          |
+| -------------------------------------- | ----- | -------------------------------------------------------------------- |
+| ⚛️ [**react**](skills/react)           | 40+   | React 19 concurrent rendering, Server Components, hooks optimization |
+| 🔺 [**nextjs**](skills/nextjs)         | 40+   | Next.js 16 App Router, caching, server components, routing           |
+| 📘 [**typescript**](skills/typescript) | 42+   | Type system optimization, compiler configuration, async patterns     |
 
-#### GitHub Copilot / Cursor AI
+### UI & Styling Skills
 
-1. **Add skills to your project:**
+| Skill                                                        | Rules | Description                                             |
+| ------------------------------------------------------------ | ----- | ------------------------------------------------------- |
+| 🎨 [**tailwind**](skills/tailwind)                           | 42+   | Tailwind CSS v4 optimization, utility patterns, theming |
+| 🧩 [**shadcn**](skills/shadcn)                               | 42+   | shadcn/ui components, Radix primitives, accessibility   |
+| 🎭 [**ui-design**](skills/ui-design)                         | 42+   | UI/UX best practices, accessibility, responsive design  |
+| 🌐 [**web-design-guidelines**](skills/web-design-guidelines) | 100+  | Comprehensive web design principles                     |
 
-   ```bash
-   npx skills add https://github.com/thongdn-it/react-agent-skills
-   ```
+### Data & State Management
 
-2. **AI agent will automatically detect context** when you:
-   - Work with Next.js files
-   - Write TypeScript code
-   - Create components with ShadCN
-   - Write tests with Vitest
-   - etc.
+| Skill                                            | Rules | Description                                           |
+| ------------------------------------------------ | ----- | ----------------------------------------------------- |
+| 🔄 [**tanstack-query**](skills/tanstack-query)   | 40+   | Data fetching, caching, mutations, optimistic updates |
+| 📝 [**react-hook-form**](skills/react-hook-form) | 41+   | Form validation, performance, field arrays            |
+| ✅ [**zod**](skills/zod)                         | 43+   | Schema validation, type inference, error handling     |
+| 🔗 [**nuqs**](skills/nuqs)                       | 42+   | Type-safe URL query state for Next.js                 |
 
-3. **Skills will be automatically applied** to:
-   - Suggest best practices
-   - Optimize performance
-   - Fix common mistakes
-   - Generate better code
+### Testing Skills
 
-#### Manual Reference
+| Skill                                  | Rules | Description                                |
+| -------------------------------------- | ----- | ------------------------------------------ |
+| 🧪 [**vitest**](skills/vitest)         | 44+   | Testing patterns, mocking, async testing   |
+| 🎭 [**playwright**](skills/playwright) | 43+   | E2E testing, selectors, authentication, CI |
+| 🔌 [**msw**](skills/msw)               | 45+   | API mocking with Mock Service Worker       |
+| 🔴 [**tdd**](skills/tdd)               | 42+   | Test-Driven Development methodology        |
 
-You can also directly reference the files to understand best practices:
+### Architecture & Best Practices
 
-```bash
-# View Next.js rules list
-cat skills/nextjs/SKILL.md
+| Skill                                                                    | Rules | Description                                      |
+| ------------------------------------------------------------------------ | ----- | ------------------------------------------------ |
+| 🏛️ [**feature-arch**](skills/feature-arch)                               | 42+   | Feature-based architecture, module organization  |
+| 🧱 [**vercel-composition-patterns**](skills/vercel-composition-patterns) | —     | React composition patterns from Vercel           |
+| ⚡ [**vercel-react-best-practices**](skills/vercel-react-best-practices) | 57+   | Performance optimization from Vercel Engineering |
 
-# Read a specific rule
-cat skills/nextjs/references/cache-use-cache-directive.md
+---
 
-# View TypeScript patterns
-cat skills/typescript/SKILL.md
-```
+## 💡 Why React Agent Skills?
 
-### Example Scenarios
+### 🎓 Expert-Level Knowledge
 
-#### Scenario 1: Optimize Next.js App Router
+Each skill is built from:
 
-```typescript
-// ❌ Before (not optimized)
-async function getData() {
-  const res = await fetch("https://api.example.com/data");
-  return res.json();
-}
+- Official documentation (React, Next.js, Vercel)
+- Production battle-tested patterns
+- Community best practices
+- Real-world performance optimizations
 
-// ✅ After (with skills applied)
-import { unstable_cache } from "next/cache";
+### 📊 Prioritized by Impact
 
-const getData = unstable_cache(
-  async () => {
-    const res = await fetch("https://api.example.com/data");
-    return res.json();
-  },
-  ["data-cache-key"],
-  {
-    revalidate: 3600,
-    tags: ["data"],
-  },
-);
-```
+Rules are categorized by priority:
 
-#### Scenario 2: TypeScript Performance
+| Priority        | Impact      | Description                        |
+| --------------- | ----------- | ---------------------------------- |
+| 🔴 **CRITICAL** | Major       | Performance issues, build failures |
+| 🟠 **HIGH**     | Significant | Notable improvements               |
+| 🟡 **MEDIUM**   | Important   | Best practices                     |
+| 🟢 **LOW**      | Minor       | Edge cases, optimizations          |
 
-```typescript
-// ❌ Before (slow type checking)
-function process(data: any) {
-  return data.map((item: any) => item.value);
-}
-
-// ✅ After (with explicit types)
-interface DataItem {
-  value: string;
-}
-
-function process(data: DataItem[]): string[] {
-  return data.map((item) => item.value);
-}
-```
-
-#### Scenario 3: Vitest Testing
-
-```typescript
-// ❌ Before (flaky test)
-test("loads data", () => {
-  const data = loadData();
-  expect(data).toBeDefined();
-});
-
-// ✅ After (with async patterns)
-test("loads data", async () => {
-  const data = await loadData();
-  expect(data).toBeDefined();
-  await vi.waitFor(() => {
-    expect(data.status).toBe("ready");
-  });
-});
-```
-
-## 📚 Skills List
-
-### 1. Next.js 16 App Router
-
-- **Scope:** Performance optimization, caching, server components
-- **Rules:** 40+ rules divided into 8 categories
-- **Priority:** Build optimization, caching, server components
-- **File:** [skills/nextjs/SKILL.md](skills/nextjs/SKILL.md)
-
-### 2. ShadCN UI
-
-- **Scope:** Component patterns, accessibility, theming
-- **Categories:** Architecture, accessibility, theming, forms
-- **File:** [skills/shadcn/SKILL.md](skills/shadcn/SKILL.md)
-
-### 3. Tailwind CSS
-
-- **Scope:** Utility-first CSS, responsive design, optimization
-- **File:** [skills/tailwind/SKILL.md](skills/tailwind/SKILL.md)
-
-### 4. TanStack Query
-
-- **Scope:** Data fetching, caching, mutations, optimistic updates
-- **File:** [skills/tanstack-query/SKILL.md](skills/tanstack-query/SKILL.md)
-
-### 5. TypeScript
-
-- **Scope:** Type system, compiler config, async patterns
-- **Rules:** 42+ optimization rules for compilation and type checking
-- **File:** [skills/typescript/SKILL.md](skills/typescript/SKILL.md)
-
-### 6. Vitest
-
-- **Scope:** Testing patterns, mocking, async testing
-- **Rules:** 44+ testing best practices
-- **File:** [skills/vitest/SKILL.md](skills/vitest/SKILL.md)
-
-### 7. Vercel Patterns
-
-- **Scope:** Composition patterns, React best practices
-- **Files:**
-  - [skills/vercel-composition-patterns/SKILL.md](skills/vercel-composition-patterns/SKILL.md)
-  - [skills/vercel-react-best-practices/SKILL.md](skills/vercel-react-best-practices/SKILL.md)
-
-### 8. Web Design Guidelines
-
-- **Scope:** UI/UX patterns, design principles
-- **File:** [skills/web-design-guidelines/SKILL.md](skills/web-design-guidelines/SKILL.md)
-
-## 🎯 Key Features
-
-### Prioritized by Impact
-
-Each skill is organized by priority level:
-
-- **CRITICAL** - Major impact on performance/functionality
-- **HIGH** - Significant improvements
-- **MEDIUM** - Important best practices
-- **LOW** - Minor optimizations
-
-### Category-based Organization
-
-Rules are grouped by topic:
-
-```
-nextjs/
-  └─ references/
-      ├─ build-*.md         (Bundle optimization)
-      ├─ cache-*.md         (Caching strategies)
-      ├─ server-*.md        (Server components)
-      ├─ action-*.md        (Server actions)
-      └─ client-*.md        (Client components)
-```
-
-### Actionable Guidelines
+### ✅ Actionable Guidelines
 
 Each rule includes:
 
-- ✅ **DO** - Best practices with code examples
-- ❌ **DON'T** - Anti-patterns to avoid
-- 📝 **Why** - Explanation of reasoning
-- 🔧 **How** - Implementation guide
+- **DO** — Correct patterns with code examples
+- **DON'T** — Anti-patterns to avoid
+- **WHY** — Explanation of reasoning
+- **HOW** — Implementation guide
+
+---
+
+## 🤖 Supported Agents
+
+Works with all major AI coding assistants:
+
+<p align="center">
+  <img src="https://img.shields.io/badge/GitHub%20Copilot-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Copilot" />
+  <img src="https://img.shields.io/badge/Cursor-000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor" />
+  <img src="https://img.shields.io/badge/Claude%20Code-5A67D8?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Code" />
+  <img src="https://img.shields.io/badge/Windsurf-0EA5E9?style=for-the-badge&logo=codeium&logoColor=white" alt="Windsurf" />
+</p>
+
+<details>
+<summary><strong>Full list of 33+ supported agents</strong></summary>
+
+- AMP
+- Antigravity
+- Claude Code
+- ClawdBot
+- Cline
+- Codex
+- Cursor
+- Droid
+- Gemini
+- GitHub Copilot
+- Goose
+- Kilo
+- Kiro CLI
+- OpenCode
+- Roo
+- Trae
+- Windsurf
+- And more...
+
+</details>
+
+---
+
+## 📁 Project Structure
+
+```
+react-agent-skills/
+├── skills/
+│   ├── react/                    # React 19 patterns
+│   ├── nextjs/                   # Next.js 16 App Router
+│   ├── typescript/               # TypeScript optimization
+│   ├── tailwind/                 # Tailwind CSS v4
+│   ├── shadcn/                   # shadcn/ui components
+│   ├── tanstack-query/           # Data fetching & caching
+│   ├── react-hook-form/          # Form handling
+│   ├── zod/                      # Schema validation
+│   ├── nuqs/                     # URL state management
+│   ├── vitest/                   # Unit testing
+│   ├── playwright/               # E2E testing
+│   ├── msw/                      # API mocking
+│   ├── tdd/                      # TDD methodology
+│   ├── feature-arch/             # Feature architecture
+│   ├── ui-design/                # UI/UX best practices
+│   ├── vercel-composition-patterns/
+│   ├── vercel-react-best-practices/
+│   └── web-design-guidelines/
+├── README.md
+├── LICENSE
+└── CHANGELOG.md
+```
+
+---
+
+## 🔧 Usage Examples
+
+### With GitHub Copilot / Cursor
+
+After installing skills, just start coding! The AI will automatically apply best practices:
+
+```typescript
+// Ask: "Create a Next.js page with data fetching"
+// AI will apply: nextjs, react, tanstack-query skills
+
+// Ask: "Build a form with validation"
+// AI will apply: react-hook-form, zod, shadcn skills
+
+// Ask: "Write tests for this component"
+// AI will apply: vitest, tdd, msw skills
+```
+
+### Manual Reference
+
+Directly access guidelines:
+
+```bash
+# View React 19 patterns
+cat skills/react/SKILL.md
+
+# Read Next.js caching rules
+cat skills/nextjs/references/cache-use-cache-directive.md
+
+# Check Tailwind v4 optimization
+cat skills/tailwind/SKILL.md
+```
+
+---
 
 ## 🤝 Contributing
 
-We welcome all contributions! If you have:
+We welcome contributions! Here's how you can help:
 
-- 🐛 Bug reports
-- 💡 Feature requests
-- 📝 Documentation improvements
-- ✨ New skill suggestions
+### Adding New Skills
 
-### Contribution Process
-
-1. **Fork the repository**
-2. **Create a new branch:**
-
-   ```bash
-   git checkout -b feature/your-skill-name
-   ```
-
-3. **Add your skill:**
-
+1. Fork the repository
+2. Create skill directory: `skills/your-skill/`
+3. Add required files:
    ```
    skills/your-skill/
-   ├── SKILL.md          # Description and index
-   ├── AGENTS.md         # Guidelines for agents
-   └── references/       # Detailed rules
-       ├── rule-01.md
-       └── rule-02.md
+   ├── SKILL.md          # Description and quick reference
+   ├── AGENTS.md         # Comprehensive guide for agents
+   └── references/       # Detailed rule files
+       ├── _sections.md
+       └── rule-*.md
    ```
+4. Submit a Pull Request
 
-4. **Commit changes:**
+### Improving Existing Skills
 
-   ```bash
-   git commit -m "feat: add [skill-name] skill"
-   ```
+- Add new rules with code examples
+- Fix incorrect patterns
+- Update for new framework versions
+- Improve explanations
 
-5. **Push and create Pull Request:**
-   ```bash
-   git push origin feature/your-skill-name
-   ```
-
-### Guidelines for Contributors
-
-- Follow the existing project structure
-- Each rule should have clear code examples
-- Add priority level for each rule
-- Document "When to Apply" and "When NOT to Apply"
-- Include measurable impact when possible
+---
 
 ## 📄 License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+MIT License - see [LICENSE](LICENSE) for details.
 
-## 🙏 Credits & Acknowledgments
+---
 
-This project is built upon the excellent work of many talented developers and communities. We are grateful for their contributions to the open-source ecosystem.
+## 🙏 Acknowledgments
 
 ### Primary Sources
 
-All skills in this repository are sourced from [skills.sh](https://skills.sh/) - a collection of agent skills for AI-powered development tools.
+All skills are curated from [skills.sh](https://skills.sh/) ecosystem:
 
-#### From [Vercel Agent Skills](https://github.com/vercel-labs/agent-skills)
+#### [Vercel Agent Skills](https://github.com/vercel-labs/agent-skills)
 
-Created and maintained by [Vercel Labs](https://vercel.com/labs)
+- `web-design-guidelines`
+- `vercel-composition-patterns`
+- `vercel-react-best-practices`
 
-- **web-design-guidelines** - UI/UX design principles and best practices
-- **vercel-composition-patterns** - React composition patterns
-- **vercel-react-best-practices** - React best practices and patterns
+#### [dot-skills by @pproenca](https://github.com/pproenca/dot-skills)
 
-Special thanks to the Vercel team for pioneering the agent skills framework and their continuous contributions to the developer ecosystem.
+- `react`, `nextjs`, `typescript`
+- `tailwind`, `shadcn`, `tanstack-query`
+- `vitest`, `playwright`, `msw`, `tdd`
+- `react-hook-form`, `zod`, `nuqs`
+- `feature-arch`, `ui-design`
 
-#### From [dot-skills by @pproenca](https://github.com/pproenca/dot-skills)
+### Documentation Sources
 
-Created and maintained by [Pedro Proença](https://github.com/pproenca)
-
-- **nextjs** - Next.js 16 App Router performance optimization (40+ rules)
-- **typescript** - TypeScript performance optimization (42+ rules)
-- **vitest** - Vitest testing patterns and best practices (44+ rules)
-- **shadcn** - ShadCN UI component patterns and accessibility
-- **tailwind** - Tailwind CSS utility-first patterns
-- **tanstack-query** - TanStack Query data fetching and caching
-
-Huge thanks to Pedro Proença for the comprehensive and well-structured skill collections that form the core of this repository.
-
-### Original Documentation Sources
-
-The skills are based on official documentation and community best practices from:
-
-- **[Next.js](https://nextjs.org/docs)** by Vercel
-- **[TypeScript](https://www.typescriptlang.org/docs/)** by Microsoft
-- **[React](https://react.dev/)** by Meta/React Team
-- **[Vitest](https://vitest.dev/)** by Vitest Team
-- **[ShadCN UI](https://ui.shadcn.com/)** by [@shadcn](https://github.com/shadcn)
-- **[TanStack Query](https://tanstack.com/query)** by Tanner Linsley & TanStack Team
-- **[Tailwind CSS](https://tailwindcss.com/)** by Tailwind Labs
-
-### Community Contributors
-
-Special thanks to all the developers, maintainers, and contributors who have shared their knowledge and best practices through:
-
-- Blog posts and tutorials
-- GitHub discussions and issues
-- Conference talks and workshops
-- Open-source projects and examples
-
-### Maintainer
-
-This curated collection is maintained by [@thongdn-it](https://github.com/thongdn-it) with the goal of making these best practices more accessible to AI-powered development tools.
+- [React](https://react.dev/) by Meta
+- [Next.js](https://nextjs.org/) by Vercel
+- [TypeScript](https://typescriptlang.org/) by Microsoft
+- [Tailwind CSS](https://tailwindcss.com/) by Tailwind Labs
+- [shadcn/ui](https://ui.shadcn.com/) by @shadcn
+- [TanStack Query](https://tanstack.com/query) by Tanner Linsley
 
 ---
 
-**Note:** If you are an original author of any content used here and would like attribution, corrections, or removal, please [open an issue](https://github.com/thongdn-it/react-agent-skills/issues) or contact us directly.
+## 📞 Support
 
-## 📞 Contact
-
-- **GitHub:** [@thongdn-it](https://github.com/thongdn-it)
-- **Repository:** [react-agent-skills](https://github.com/thongdn-it/react-agent-skills)
+- 🐛 [Report Issues](https://github.com/thongdn-it/react-agent-skills/issues)
+- 💬 [Discussions](https://github.com/thongdn-it/react-agent-skills/discussions)
+- ⭐ [Star on GitHub](https://github.com/thongdn-it/react-agent-skills)
 
 ---
 
-⭐️ If you find this project helpful, don't forget to star the repository!
+<p align="center">
+  <strong>If you find this helpful, please ⭐ star the repository!</strong>
+</p>
 
-**Built with ❤️ for the React & AI community**
+<p align="center">
+  Built with ❤️ for the React & AI community by <a href="https://github.com/thongdn-it">@thongdn-it</a>
+</p>
